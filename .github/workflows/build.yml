@@ -1,3 +1,4 @@
+
 name: Build Flet APK
 
 on:
@@ -20,7 +21,7 @@ jobs:
         run: pip install flet
 
       - name: Build APK
-        run: flet build apk --project quxian --org com.mycompany --product "曲线行驶"
+        run: flet build apk --project quxian --org com.mycompany --product "曲线行驶" -y
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
